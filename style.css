@@ -1,0 +1,124 @@
+/* General styling */
+:root {
+  --smaller: .75;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  align-items: center;
+  background-color: #2D3442;
+  background: #2D3442;
+  fill: #2D3442;
+  display: flex;
+  font-family: -apple-system, 
+    BlinkMacSystemFont, 
+    "Segoe UI", 
+    Roboto, 
+    Oxygen-Sans, 
+    Ubuntu, 
+    Cantarell, 
+    "Helvetica Neue", 
+    sans-serif;
+}
+
+/* Additional container covering full viewport */
+.full-viewport-container {
+  height: 100%; /* Make container cover full height of the viewport */
+  width: 100%; /* Make container cover full width of the viewport */
+  background-color: #2D3442; /* Set background color to #2D3442 */
+  background: #2D3442;
+  fill: #2D3442;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+/* Wrapper for the inner container */
+.container-wrapper {
+  width: 100%; /* Ensure wrapper spans the entire width */
+  max-width: 800px; /* Adjust max-width as needed */
+}
+
+/* Main content container */
+.container {
+  color: #F6BB4B;
+  text-align: center;
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+.emoji {
+  display: none;
+  padding: 1rem;
+}
+
+.emoji span {
+  font-size: 4rem;
+  padding: 0 .5rem;
+}
+
+/* Update fullscreen button styles */
+#fullscreen-button {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: rgba(255, 255, 255, 0.08); /* Set background color similar to fullscreen button */
+  border: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  transition: transform 0.3s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 9999;
+}
+
+#fullscreen-button:hover {
+  transform: scale(1.125);
+}
+
+#fullscreen-button svg:nth-child(2) {
+  display: none;
+}
+
+#fullscreen-button.fullscreen svg:nth-child(1) {
+  display: none;
+}
+
+#fullscreen-button.fullscreen svg:nth-child(2) {
+  display: inline-block;
+}
+
+#fullscreen-button svg {
+  fill: #F6BB4B; /* Change icon color */
+}
