@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="https://codehs.com/uploads/a0ae9a54391a4a0c3948dee7c7de2d12" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Timer</title>
+  <meta name="author" content="Henry Quakenbush">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="full-viewport-container">
+    <div class="container-wrapper">
+      <div class="container">
+        <h1 id="headline">Countdown to the End of School</h1>
+        <div id="countdown">
+          <ul>
+            <li><span id="days"></span>days</li>
+            <li><span id="hours"></span>Hours</li>
+            <li><span id="minutes"></span>Minutes</li>
+            <li><span id="seconds"></span>Seconds</li>
+          </ul>
+        </div>
+        <div id="content" class="emoji">
+          <span>🔥</span>
+          <span>🎉</span>
+          <span>👋</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fullscreen button -->
+    <button id="fullscreen-button" onclick="toggle_fullscreen()">
+      <svg viewBox="0 0 24 24">
+        <path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/>
+      </svg>
+      <svg viewBox="0 0 24 24">
+        <path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/>
+      </svg>
+    </button>
+  </div>
+
+  <script src="countdown.js"></script>
+</body>
+</html>
